@@ -17,11 +17,12 @@ public class coins : MonoBehaviour
         transform.position = new Vector3(transform.position.x, (Mathf.Sin(Time.time) + 6.9f), transform.position.z);
         transform.rotation = Quaternion.Euler(90, 0, ((transform.rotation.z) +30)* Time.time);
     }
-    private void OnCollisionEnter(UnityEngine.Collision collision)
+    private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
             collision.gameObject.GetComponent<playerpoints>().points++;
+            GetComponent<AudioSource>().Play();
         }
 
 

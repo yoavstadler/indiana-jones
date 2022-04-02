@@ -11,6 +11,7 @@ TagManager:
   - holder1
   - trapholders
   - coins
+  - spike
   layers:
   - Default
   - TransparentFX

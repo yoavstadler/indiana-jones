@@ -24,7 +24,8 @@ public class destroy : MonoBehaviour
 
         if (collision.gameObject.CompareTag("coins"))
         {
-            Destroy(collision.gameObject);
+
+            Destroy(collision.gameObject , 0.1f);
         }
 
 
